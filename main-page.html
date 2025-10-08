@@ -8,13 +8,11 @@
   </head>
 
   <body>
-    <!-- ===== HEADER ===== -->
     <header class="header">
-      <div class="header__logo">
-        <img src="./assets/images/logo.png" alt="Logo" />
-      </div>
-
-      <nav class="nav">
+      <nav class="nav container">
+        <div class="header__logo">
+          <img src="./assets/images/logo.png" alt="Logo" />
+        </div>
         <ul class="nav__list nav__list--secondary">
           <li class="nav__item">O nás</li>
           <li class="nav__item">Novinky</li>
@@ -24,9 +22,14 @@
             <button type="button" class="nav__button">Kontaktujte nás</button>
           </li>
         </ul>
-
-        <div class="nav__icon nav__icon--envelope"></div>
-        <div class="nav__icon nav__icon--call"></div>
+        <div class="nav__icon__wrapper">
+          <div class="nav__icon nav__icon--envelope">
+            <img src="./assets/images/envelope.png" alt="envelope-logo" />
+          </div>
+          <div class="nav__icon nav__icon--call">
+            <img src="./assets/images/phone.png" alt="phone-logo" />
+          </div>
+        </div>
       </nav>
     </header>
 
