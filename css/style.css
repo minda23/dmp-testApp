@@ -16,7 +16,10 @@ body {
   --color-footer: #E9E9E9;
   /* font-family */
   --font-family-default: "Poppins", sans-serif;
-  --font-family-body-text: "Arial", Helvetica, sans-serif;
+  --font-family-body-text: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --font-family-footer: Arial, Helvetica, sans-serif;
+
+
   /* font-size navbar */
   --font-size-heading: 1.25rem;
   /* font-size main */
@@ -213,6 +216,7 @@ img:not(.logo) {
 .gallery__text {
   padding: 0 var(--space-sm-plus) 0 var(--space-sm-plus);
   margin-top: 0;
+  font-family: var(--font-family-body-text);
 }
 
 .gallery__title {
@@ -267,6 +271,11 @@ img:not(.logo) {
   display: flex;
   gap: var(--space-md);
   padding: var(--space-sm-plus);
+
+}
+
+.contact__info--text {
+  font-family: var(--font-family-footer);
 
 }
 
