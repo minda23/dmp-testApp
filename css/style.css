@@ -1,3 +1,8 @@
+html {
+  font-family: var(--font-family-default);
+}
+
+
 :root {
   /* colors */
   --color-primary: #ff682e;
@@ -7,9 +12,8 @@
   --color-contact-section: #F6F6F6;
   --color-footer: #E9E9E9;
   /* font-family */
-  --font-family-heading: "Poppins", sans-serif;
+  --font-family-default: "Poppins", sans-serif;
   --font-family-body-text: "Arial", Helvetica, sans-serif;
-  --font-family-monospace: "Fira Code", monospace;
   /* font-size navbar */
   --font-size-heading: 1.25rem;
   /* font-size main */
@@ -198,6 +202,8 @@ img:not(.logo) {
   background-color: var(--color-primary);
   color: var(--color-white);
   padding: 2rem 0rem;
+
+
 }
 
 /* toto je na div */
