@@ -11,7 +11,7 @@
     <header class="header">
       <nav class="nav container">
         <div class="header__logo">
-          <img src="./assets/images/logo.png" alt="Logo" />
+          <img class="logo" src="./assets/images/logo.png" alt="Logo" />
         </div>
         <ul class="nav__list nav__list--secondary">
           <li class="nav__item">O nás</li>
@@ -35,7 +35,7 @@
 
     <main class="main">
       <div class="main__heading">
-        <h3 class="main__title">Kto maže, ten jede</h3>
+        <h3 class="main__title">Kdo maže, ten jede</h3>
       </div>
 
       <section class="gallery">
@@ -128,7 +128,9 @@
       </section>
 
       <div class="main__button-wrapper">
-        <button class="main__button">Více o nás</button>
+        <button class="main__button">
+          Více o nás <img src="./assets/images/arrow.png" alt="arrow" />
+        </button>
       </div>
     </main>
 
@@ -166,10 +168,10 @@
       </div>
     </section>
 
-    <section class="footer-info">
-      <div class="footer-info__column">
-        <h3 class="footer-info__title">Vybíráme z e-shopu</h3>
-        <ul class="footer-info__list">
+    <section class="contact-info">
+      <div class="contact-info__column">
+        <h3 class="contact-info__title">Vybíráme z e-shopu</h3>
+        <ul class="contact-info__list">
           <li><a href="#">Horská kola</a></li>
           <li><a href="#">Elektrická kola</a></li>
           <li><a href="#">Cyklocomputery</a></li>
@@ -177,9 +179,9 @@
         </ul>
       </div>
 
-      <div class="footer-info__column">
-        <h3 class="footer-info__title">Mohlo by vás zajímat</h3>
-        <ul class="footer-info__list">
+      <div class="contact-info__column">
+        <h3 class="contact-info__title">Mohlo by vás zajímat</h3>
+        <ul class="contact-info__list">
           <li><a href="#">Naše prodejna</a></li>
           <li><a href="#">Provozní doba</a></li>
           <li><a href="#">Kontakty</a></li>
@@ -187,9 +189,9 @@
         </ul>
       </div>
 
-      <div class="footer-info__column">
-        <h3 class="footer-info__title">Vše o nákupu</h3>
-        <ul class="footer-info__list">
+      <div class="contact-info__column">
+        <h3 class="contact-info__title">Vše o nákupu</h3>
+        <ul class="contact-info__list">
           <li><a href="#">Jak objednat zboží</a></li>
           <li><a href="#">Dostupnost zboží</a></li>
           <li><a href="#">Platba a doprava</a></li>
@@ -197,15 +199,24 @@
         </ul>
       </div>
 
-      <div class="footer-info__column">
-        <div class="footer-info__card">
-          <strong>dmpagency</strong><br />
-          <span>po–pá 9–15 hod</span><br /><br />
-          <address>
-            Kbelská 61B/44<br />
-            198 00 Praha 9 – Hloubětín<br />
-            Česká republika
-          </address>
+      <div class="contact-info__column">
+        <div class="contact-info__card">
+          <div class="heading__footer">
+            <div>
+              <img src="./assets/images/logo-contact.png" alt="logo-contact" />
+            </div>
+            <div class="dm_heading">
+              <h3>dmpagency</strong><br /></h3>
+              <span>po–pá 9–15 hod</span><br /><br />
+            </div>
+          </div>
+          <div class="adress__info">
+            <address>
+              Kbelská 61B/44<br />
+              198 00 Praha 9 – Hloubětín<br />
+              Česká republika
+            </address>
+          </div>
         </div>
       </div>
     </section>
@@ -213,10 +224,10 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer__logo">
-          <img src="./assets/images/logo.png" alt="Logo" />
+          <img class="logo" src="./assets/images/logo.png" alt="Logo" />
         </div>
         <div class="footer__heading">
-          <h3>Kto maže, ten jede</h3>
+          <h3>Kdo maže, ten jede</h3>
         </div>
         <div class="footer__copyright">
           <span>© Oficiální stránky společnosti dmpagency</span>
