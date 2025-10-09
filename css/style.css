@@ -6,10 +6,6 @@ body {
   margin: 0;
 }
 
-/* ked chcem aplikovať farbu ked dam medzeru od sekcie tak davam padding nie margin */
-
-
-
 :root {
   /* colors */
   --color-primary: #ff682e;
@@ -487,7 +483,8 @@ img:not(.logo) {
 
 @media screen and (max-width: 420px) {
   .gallery__item {
-    min-width: 15rem;
+    max-width: 13rem;
+    min-width: 13rem;
   }
 
   .contact-info__card {
@@ -495,8 +492,21 @@ img:not(.logo) {
     width: 100%;
   }
 
+  .main__title {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .contact__title {
+    font-size: 1.4rem;
+  }
+
   .contact__info {
     padding: 0;
+  }
+
+  .contact__address-content {
+    flex-direction: column;
   }
 
   .contact__address-content a {
