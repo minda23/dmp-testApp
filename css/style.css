@@ -150,11 +150,11 @@ img {
 
 .gallery {
   padding: var(--space-xl2) 0 var(--space-xl2) 0;
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  grid-template-rows: masonry;
+  column-count: 5;
+  column-gap: 10px;
 }
+
+
 
 .gallery__text {
   padding: 0 2rem 0 2rem;
@@ -164,6 +164,15 @@ img {
 .gallery__title {
   margin-top: 0;
   margin-bottom: 0.5rem;
+}
+
+.gallery__item {
+  .gallery__item {
+    break-inside: avoid;
+    margin-bottom: 5px;
+    /* menšia medzera medzi itemami */
+  }
+
 }
 
 .gallery__item--text:nth-of-type(3) {
