@@ -4,6 +4,8 @@
   --color-white: #ffffff;
   --color-text-heading: #000000;
   --color-text-light: #818181;
+  --color-contact-section: #F6F6F6;
+  --color-footer: #E9E9E9;
   /* font-family */
   --font-family-heading: "Poppins", sans-serif;
   --font-family-body-text: "Arial", Helvetica, sans-serif;
@@ -383,6 +385,7 @@ img {
   justify-content: space-around;
   align-items: baseline;
   margin-top: 3rem;
+  background-color: var(--color-contact-section);
 }
 
 .contact__info {
@@ -479,6 +482,7 @@ img {
 .footer-info {
   display: flex;
   justify-content: space-around;
+  background-color: var(--color-contact-section);
 
 }
 
@@ -487,4 +491,5 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--color-footer)
 }
