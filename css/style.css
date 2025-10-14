@@ -517,6 +517,7 @@ img:not(.logo) {
 
   .contact__address-content {
     flex-direction: column;
+    margin-left: 1rem;
   }
 
   .contact__address-content a {
