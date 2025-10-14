@@ -514,6 +514,7 @@ img:not(.logo) {
     padding: 0;
   }
 
+
   .contact__address-content {
     flex-direction: column;
   }
@@ -522,8 +523,27 @@ img:not(.logo) {
     font-size: var(--font-size-footer-lg);
   }
 
+
   .adress__info {
     text-align: center;
+  }
+
+  .dm_heading h3 {
+    font-size: var(--font-size-footer-xs);
+  }
+
+
+  .dm_heading span {
+    font-size: var(--font-size-footer-xs);
+  }
+
+  .adress__info {
+    font-size: var(--font-size-footer-xs);
+  }
+
+
+  .footer__copyright {
+    margin-left: 2rem;
   }
 
 }
