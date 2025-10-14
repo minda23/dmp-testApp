@@ -493,7 +493,7 @@ img:not(.logo) {
 @media screen and (max-width: 420px) {
   .gallery__item {
     max-width: 13rem;
-    min-width: 13rem;
+    min-width: 16rem;
   }
 
   .contact-info__card {
