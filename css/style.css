@@ -521,7 +521,7 @@ img:not(.logo) {
   }
 
   .contact__address-content a {
-    font-size: var(--font-size-footer-lg);
+    font-size: var(--space-1xs);
   }
 
 
@@ -542,9 +542,5 @@ img:not(.logo) {
     font-size: var(--font-size-footer-xs);
   }
 
-
-  .footer__copyright {
-    margin-left: 2rem;
-  }
 
 }
