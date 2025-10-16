@@ -112,6 +112,7 @@ img:not(.logo) {
 .nav {
   background-color: var(--color-white);
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
@@ -120,9 +121,11 @@ img:not(.logo) {
 
 .nav__list--secondary {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  gap: var(--space-sm);
+  padding-left: 0;
   column-gap: 2rem;
   list-style-type: none;
 }
@@ -177,7 +180,7 @@ img:not(.logo) {
 
 .main__title {
   text-align: center;
-  font-size: var(--font-size-h1);
+  font-size: 1.4rem;
 }
 
 .gallery {
@@ -194,8 +197,8 @@ img:not(.logo) {
 
 .gallery__item {
   break-inside: avoid;
-  max-width: 20rem;
-  min-width: 20rem;
+  max-width: 13rem;
+  min-width: 16rem;
   margin-bottom: var(--space-2xs);
   text-align: center;
   border-radius: var(--radius-xs);
@@ -270,9 +273,11 @@ img:not(.logo) {
 .contact__info {
   display: flex;
   gap: var(--space-md);
-  padding: var(--space-sm-plus);
+  padding: 0;
+
 
 }
+
 
 .contact__info--text {
   font-family: var(--font-family-footer);
@@ -280,7 +285,7 @@ img:not(.logo) {
 }
 
 .contact__title {
-  font-size: var(--font-size-h2-plus);
+  font-size: 1.4rem;
 
 }
 
@@ -291,10 +296,11 @@ img:not(.logo) {
 
 .contact__address-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-left: 1rem;
   gap: 2rem;
   font-style: normal;
 }
@@ -302,7 +308,7 @@ img:not(.logo) {
 .contact__address-content a {
   text-decoration: none;
   color: var(--color-text-heading);
-  font-size: var(--font-size-footer-favicon);
+  font-size: var(--space-1xs);
 
 }
 
@@ -364,8 +370,9 @@ img:not(.logo) {
 }
 
 .adress__info {
-  font-size: var(--font-size-footer-md);
+  font-size: var(--font-size-footer-xs);
   font-weight: var(--font-weight-regular);
+  text-align: center;
 }
 
 .contact-info {
@@ -388,8 +395,8 @@ img:not(.logo) {
   color: var(--color-white);
   background-image: url("../assets/images/pobocka.png");
   border-radius: var(--radius-sm);
-  max-width: 90vw;
-  width: var(--space-xl7);
+  max-width: 80vw;
+  width: 100%;
   min-height: var(--space-xl6);
   background-repeat: no-repeat;
   background-size: cover;
@@ -412,13 +419,13 @@ img:not(.logo) {
 }
 
 .dm_heading h3 {
-  font-size: var(--font-size-h3);
+  font-size: var(--font-size-footer-xs);
   font-weight: var(--font-weight-bold);
   margin: 0;
 }
 
 .dm_heading span {
-  font-size: var(--font-size-footer-md);
+  font-size: var(--font-size-footer-xs);
   font-weight: var(--font-weight-regular);
 }
 
@@ -476,71 +483,63 @@ img:not(.logo) {
 
 /* media queries*/
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .nav {
-    flex-direction: column;
+    flex-direction: row;
   }
 
 
   .nav__list--secondary {
-    flex-direction: column;
-    gap: var(--space-sm);
-    padding-left: 0;
-
+    flex-direction: row;
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (min-width: 420px) {
   .gallery__item {
-    max-width: 13rem;
-    min-width: 16rem;
+    max-width: 20rem;
+    min-width: 20rem;
   }
 
   .contact-info__card {
-    max-width: 80vw;
-    width: 100%;
+    max-width: 90vw;
+    width: var(--space-xl7);
   }
 
   .main__title {
-    text-align: center;
-    font-size: 1.4rem;
+    font-size: var(--font-size-h1);
   }
 
   .contact__title {
-    font-size: 1.4rem;
+    font-size: var(--font-size-h2-plus);
   }
 
   .contact__info {
-    padding: 0;
+    padding: var(--space-sm-plus);
   }
 
 
   .contact__address-content {
-    flex-direction: column;
-    margin-left: 1rem;
+    flex-direction: row;
+    margin-left: 0;
   }
 
   .contact__address-content a {
-    font-size: var(--space-1xs);
+    font-size: var(--font-size-footer-favicon);
   }
 
-
   .adress__info {
-    text-align: center;
+    text-align: left;
+    font-size: var(--font-size-footer-md);
   }
 
   .dm_heading h3 {
-    font-size: var(--font-size-footer-xs);
+    font-size: var(--font-size-h3);
   }
-
 
   .dm_heading span {
-    font-size: var(--font-size-footer-xs);
+    font-size: var(--font-size-footer-md);
   }
 
-  .adress__info {
-    font-size: var(--font-size-footer-xs);
-  }
 
 
 }
