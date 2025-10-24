@@ -83,8 +83,11 @@ body {
   --radius-sm: 0.938rem;
   --radius-md: 2.375rem;
   --radius-lg: 3.25rem;
-}
 
+  /* line height */
+  --line-height-gallery-text: 140%;
+  --line-height-gallery-title: 120%;
+}
 
 /* header section*/
 
@@ -92,7 +95,6 @@ img:not(.logo) {
   width: 100%;
   max-width: 15rem;
 }
-
 
 .logo {
   width: 16.125rem;
@@ -180,6 +182,7 @@ img:not(.logo) {
   font-size: var(--font-size-heading);
   color: var(--color-white);
   border: none;
+  white-space: nowrap;
 }
 
 .nav__item--button a {
@@ -192,11 +195,64 @@ img:not(.logo) {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--color-contact-section);
 }
 
 .main__title {
   text-align: center;
   font-size: 1.4rem;
+}
+
+
+.gallery-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.gallery__box {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 var(--space-xl6);
+  max-width: var(--space-xs-gl);
+  height: var(--space-xs-gl);
+  border-radius: var(--space-5xs);
+  overflow: hidden;
+  background-color: var(--color-white);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+
+.gallery__box {
+  flex: 2;
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__text {
+  flex: 1;
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-gallery-title);
+
+}
+
+.gallery__box--1 {
+  background-image: url(../assets/images/img-1.jpg);
+}
+
+.gallery__box--2 {
+  background-image: url(../assets/images/img-2.jpg);
+}
+
+.gallery__box--3 {
+  background-image: url(../assets/images/img-3.jpg);
+}
+
+.gallery__box--4 {
+  background-image: url(../assets/images/img-4.jpg);
 }
 
 .gallery {
@@ -206,6 +262,7 @@ img:not(.logo) {
   flex-direction: row;
   justify-content: center;
   gap: var(--space-2xs);
+  margin-top: 2rem;
 
 
 }
@@ -226,8 +283,7 @@ img:not(.logo) {
   background-color: var(--color-primary);
   color: var(--color-white);
   padding: var(--space-sm-plus) 0rem;
-
-
+  line-height: var(--line-height-gallery-text)
 }
 
 
@@ -252,9 +308,6 @@ img:not(.logo) {
   min-height: 100%;
 }
 
-
-
-
 .main__button-wrapper {
   text-align: center;
 }
@@ -273,36 +326,33 @@ img:not(.logo) {
   height: var(--font-size-footer-2xs);
 }
 
+.wrapper-footer {
+  max-width: 140rem;
+  padding: 0 40px;
+}
+
 .contact {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   margin-top: 3rem;
   background-color: var(--color-contact-section);
 }
 
-.contact__content {
-  margin: 0 3rem;
-}
 
 .contact__info {
   display: flex;
   gap: var(--space-md);
   padding: 0;
-
-
 }
-
 
 .contact__info--text {
   font-family: var(--font-family-footer);
-
 }
 
 .contact__title {
   font-size: 1.4rem;
-
 }
 
 .contact__subtitle {
@@ -325,7 +375,6 @@ img:not(.logo) {
   text-decoration: none;
   color: var(--color-text-heading);
   font-size: var(--space-1xs);
-
 }
 
 .contact__address {
@@ -343,7 +392,6 @@ img:not(.logo) {
   padding: 1.3rem;
   border-radius: var(--radius-xs);
   position: relative;
-
 }
 
 .contact__telephone__info {
@@ -393,7 +441,7 @@ img:not(.logo) {
 
 .contact-info {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   background-color: var(--color-contact-section);
@@ -473,6 +521,10 @@ img:not(.logo) {
 
 }
 
+.contact__info--text {
+  justify-content: left;
+}
+
 .contact-info__list li {
   margin-bottom: var(--font-size-footer-xs)
 }
@@ -480,6 +532,7 @@ img:not(.logo) {
 .contact-info__list li a {
   color: var(--color-text-light);
   text-decoration: none;
+  font-size: 1.123rem;
 
 }
 
@@ -489,11 +542,20 @@ img:not(.logo) {
   width: 100%;
 }
 
+.footer__heading {
+  font-size: 1.75rem;
+}
+
+
+.footer__copyright {
+  font-size: 1.198rem;
+}
+
 
 
 .footer__wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   justify-items: center;
@@ -524,6 +586,10 @@ img:not(.logo) {
     min-width: 20rem;
   }
 
+  .nav__item--button {
+    padding: var(--space-2xs);
+  }
+
   .contact-info__card {
     max-width: 90vw;
     width: var(--space-xl7);
@@ -535,10 +601,6 @@ img:not(.logo) {
 
   .contact__title {
     font-size: var(--font-size-h2-plus);
-  }
-
-  .contact__info {
-    padding: var(--space-sm-plus);
   }
 
 
