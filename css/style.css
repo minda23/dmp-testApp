@@ -318,13 +318,15 @@ img:not(.logo) {
   width: 100%;
 }
 
+
+
 .contact-section__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 95%;
-  width: var(--container-section);
+  padding: 0 1rem;
+  max-width: 90rem;
   margin: 0 auto;
 
 }
@@ -430,8 +432,8 @@ img:not(.logo) {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 95%;
-  width: var(--container-section);
+  padding: 0 1rem;
+  max-width: 90rem;
   margin: 0 auto;
 }
 
@@ -536,8 +538,8 @@ img:not(.logo) {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 95%;
-  width: var(--container-section);
+  padding: 0 1rem;
+  max-width: 90rem;
   margin: 0 auto;
   background-color: var(--color-footer);
   padding: var(--space-sm-plus) 0;
