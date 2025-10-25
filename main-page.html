@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
@@ -26,187 +30,141 @@
   </head>
 
   <body>
-    <div class="container_body">
-      <header class="header">
-        <nav class="nav container">
-          <div class="header__logo">
-            <img class="logo" src="./assets/images/logo.png" alt="Logo" />
-          </div>
-          <div class="nav__right">
-            <ul class="nav__list nav__list--secondary">
-              <li class="nav__item">O nás</li>
-              <li class="nav__item">Novinky</li>
-              <li class="nav__item">Akce</li>
-              <li class="nav__item">Naše prodejny</li>
-            </ul>
-            <div class="nav__item nav__item--button">
-              <a
-                href="mailto:info@klima-classic.cz"
-                type="button"
-                class="nav__button"
-                >Kontaktujte nás</a
-              >
-            </div>
-            <div class="nav__icon__wrapper">
-              <div class="nav__icon nav__icon--envelope">
-                <a href="mailto:info@klima-classic.cz"
-                  ><img src="./assets/images/envelope.png" alt="envelope-logo"
-                /></a>
-              </div>
-              <div class="nav__icon nav__icon--call">
-                <a href="tel:+420281012612"
-                  ><img src="./assets/images/phone.png" alt="phone-logo"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </header>
-
-      <main class="main">
-        <div class="main__heading">
-          <h1 class="main__title">Kdo maže, ten jede</h1>
+    <header class="header">
+      <nav class="nav container">
+        <div class="header__logo">
+          <img class="logo" src="./assets/images/logo.png" alt="Logo" />
         </div>
-
-        <div class="gallery-1">
-          <div class="gallery__box">
-            <div class="gallery__box gallery__box--1"></div>
-            <div class="gallery__text">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a
-              </p>
-            </div>
+        <div class="burger-icon nav__toggle">
+          <i><i class="fa-solid fa-bars"></i></i>
+        </div>
+        <div class="nav__right">
+          <ul class="nav__list nav__list--secondary">
+            <li class="nav__item">O nás</li>
+            <li class="nav__item">Novinky</li>
+            <li class="nav__item">Akce</li>
+            <li class="nav__item">Naše prodejny</li>
+          </ul>
+          <div class="nav__item nav__item--button">
+            <a
+              href="mailto:info@klima-classic.cz"
+              type="button"
+              class="nav__button"
+              >Kontaktujte nás</a
+            >
           </div>
-
-          <div class="gallery__box">
-            <div class="gallery__box gallery__box--2"></div>
-            <div class="gallery__text">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a
-              </p>
+          <div class="nav__icon__wrapper">
+            <div class="nav__icon nav__icon--envelope">
+              <a href="mailto:info@klima-classic.cz"
+                ><img src="./assets/images/envelope.png" alt="envelope-logo"
+              /></a>
             </div>
-          </div>
-
-          <div class="gallery__box">
-            <div class="gallery__box gallery__box--3"></div>
-            <div class="gallery__text">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a
-              </p>
-            </div>
-          </div>
-
-          <div class="gallery__box">
-            <div class="gallery__box gallery__box--4"></div>
-            <div class="gallery__text">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a
-              </p>
+            <div class="nav__icon nav__icon--call">
+              <a href="tel:+420281012612"
+                ><img src="./assets/images/phone.png" alt="phone-logo"
+              /></a>
             </div>
           </div>
         </div>
-        <section class="gallery">
-          <div class="gallery__item gallery__item--img">
-            <img
-              src="./assets/images/img1.jpg"
-              alt="Cyklista v horách"
-              title="Cyklista v horách"
-            />
-          </div>
+      </nav>
+    </header>
 
-          <div class="gallery__item gallery__item--img">
-            <img src="./assets/images/img2.jpg" alt="Cyklista v lese" />
-          </div>
-
-          <div class="gallery__item gallery__item--text">
-            <h2 class="gallery__title">
-              Digitální cyklo<br />
-              pomocník
-            </h2>
-            <p class="gallery__text">
-              Díky našim digitálním nástrojům snadno najdete kolo, které
-              odpovídá vašim požadavkům. Filtrujte podle velikosti, terénu nebo
-              designu a najděte přesně to, co hledáte.
-            </p>
-          </div>
-
-          <div class="gallery__item gallery__item--text">
-            <h2 class="gallery__title">
-              Staňte <br />
-              se odborníkem
-            </h2>
-            <p class="gallery__text">
-              Využijte naše bezplatné školení a návody, jak se o své horské kolo
-              správně starat. Získejte cenné tipy od profesionálů, které zlepší
-              váš cyklistický zážitek.
-            </p>
-          </div>
-
-          <div class="gallery__item gallery__item--img">
-            <img src="./assets/images/img3.jpg" alt="Cyklista na louce" />
-          </div>
-
-          <div class="gallery__item item5 gallery__item--text">
-            <h2 class="gallery__title">
-              Nakupujte z pohodlí <br />
-              domova
-            </h2>
-            <p class="gallery__text">
-              Vyberte si své nové horské kolo snadno a rychle. Náš e-shop nabízí
-              široký sortiment, detailní popisy a veškeré příslušenství pro vaše
-              cyklistické výpravy.
-            </p>
-          </div>
-
-          <div class="gallery__item gallery__item--img">
-            <img src="./assets/images/img4.jpg" alt="Detail horského kola" />
-          </div>
-
-          <div class="gallery__item gallery__item--img">
-            <img src="./assets/images/img5.jpg" alt="Cyklista s modrým kolem" />
-          </div>
-
-          <div class="gallery__item gallery__item--img">
-            <img src="./assets/images/img6.jpg" alt="Kolo Humboldt u plotu" />
-          </div>
-
-          <div class="gallery__item gallery__item--img">
-            <img src="./assets/images/img7.jpg" alt="Cyklistka na kole" />
-          </div>
-
-          <div class="gallery__item gallery__item--text">
-            <h2 class="gallery__title">
-              Dobrodružství <br />
-              v přírodě
-            </h2>
-            <p class="gallery__text">
-              Objevujte krásy přírody na horských kolech, která spojují výkon,
-              pohodlí a ekologickou šetrnost. Připravte se na nezapomenutelné
-              zážitky v terénu.
-            </p>
-          </div>
-
-          <div class="gallery__item gallery__item--text">
-            <h2 class="gallery__title">
-              Objevte nové <br />
-              příležitosti
-            </h2>
-            <p class="gallery__text">
-              Zapojte se do našeho partnerského programu a vydělávejte tím, co
-              vás baví. Nabízíme podporu, školení a přístup k exkluzivním
-              nabídkám.
-            </p>
-          </div>
-        </section>
-
-        <div class="main__button-wrapper">
-          <button class="main__button">
-            Více o nás <img src="./assets/images/arrow.png" alt="arrow" />
-          </button>
+    <main class="main">
+      <div class="main__heading">
+        <h1 class="main__title">Kdo maže, ten jede</h1>
+      </div>
+      <section class="gallery">
+        <div class="gallery__item item1 gallery__item--img">
+          <img src="./assets/images/img1.jpg" alt="Cyklista v horách" />
         </div>
-      </main>
-     <div class="wrapper-footer">
-      <section class="contact">
+
+        <div class="gallery__item item2 gallery__item--img">
+          <img src="./assets/images/img2.jpg" alt="Cyklista v lese" />
+        </div>
+
+        <div class="gallery__item item3 gallery__item--text">
+          <h2 class="gallery__title">
+            Digitální cyklo<br />
+            pomocník
+          </h2>
+          <p class="gallery__text">
+            Díky našim digitálním nástrojům snadno najdete kolo, které odpovídá
+            vašim požadavkům. Filtrujte podle velikosti, terénu nebo designu a
+            najděte přesně to, co hledáte.
+          </p>
+        </div>
+
+        <div class="gallery__item item4 gallery__item--text">
+          <h2 class="gallery__title">
+            Staňte <br />
+            se odborníkem
+          </h2>
+          <p class="gallery__text">
+            Využijte naše bezplatné školení a návody, jak se o své horské kolo
+            správně starat. Získejte cenné tipy od profesionálů, které zlepší
+            váš cyklistický zážitek.
+          </p>
+        </div>
+
+        <div class="gallery__item item5 gallery__item--img">
+          <img src="./assets/images/img3.jpg" alt="Cyklista na louce" />
+        </div>
+
+        <div class="gallery__item item6 gallery__item--text">
+          <h2 class="gallery__title">
+            Nakupujte z pohodlí <br />
+            domova
+          </h2>
+          <p class="gallery__text">
+            Vyberte si své nové horské kolo snadno a rychle. Náš e-shop nabízí
+            široký sortiment, detailní popisy a veškeré příslušenství pro vaše
+            cyklistické výpravy.
+          </p>
+        </div>
+        <div class="gallery__item item7 gallery__item--img">
+          <img src="./assets/images/img6.jpg" alt="Kolo Humboldt u plotu" />
+        </div>
+        <div class="gallery__item item10 gallery__item--img">
+          <img src="./assets/images/img5.jpg" alt="Cyklista s modrým kolem" />
+        </div>
+
+        <div class="gallery__item item12 gallery__item--text">
+          <h2 class="gallery__title">
+            Objevte nové <br />
+            příležitosti
+          </h2>
+          <p class="gallery__text">
+            Zapojte se do našeho partnerského programu a vydělávejte tím, co vás
+            baví. Nabízíme podporu, školení a přístup k exkluzivním nabídkám.
+          </p>
+        </div>
+        <div class="gallery__item item8 gallery__item--text">
+          <h2 class="gallery__title">
+            Dobrodružství <br />
+            v přírodě
+          </h2>
+          <p class="gallery__text">
+            Objevujte krásy přírody na horských kolech, která spojují výkon,
+            pohodlí a ekologickou šetrnost. Připravte se na nezapomenutelné
+            zážitky v terénu.
+          </p>
+        </div>
+        <div class="gallery__item item9 gallery__item--img">
+          <img src="./assets/images/img4.jpg" alt="Detail horského kola" />
+        </div>
+        <div class="gallery__item item11 gallery__item--img">
+          <img src="./assets/images/img7.jpg" alt="Cyklistka na kole" />
+        </div>
+      </section>
+      <div class="main__button-wrapper">
+        <button class="main__button">
+          Více o nás <img src="./assets/images/arrow.png" alt="arrow" />
+        </button>
+      </div>
+    </main>
+
+    <section class="contact-section">
+      <div class="contact-section contact-section__container">
         <div class="contact__content">
           <h2 class="contact__title">Buďte s námi v kontaktu</h2>
           <p class="contact__subtitle">Rádi vám pomůžeme s výběrem kola.</p>
@@ -240,9 +198,11 @@
             </address>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="contact-info">
+    <section class="section-info">
+      <div class="section-info section-info_container">
         <div class="contact-info__column contact__info--text">
           <h3 class="contact-info__title">Vybíráme z e-shopu</h3>
           <ul class="contact-info__list list">
@@ -296,21 +256,22 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <footer class="footer">
-        <div class="footer__wrapper">
-          <div class="footer__logo">
-            <img class="logo" src="./assets/images/logo.png" alt="Logo" />
-          </div>
-          <div class="footer__heading">
-            <h3>"Kdo maže, ten jede"</h3>
-          </div>
-          <div class="footer__copyright">
-            <p>© Oficiální stránky společnosti dmpagency</p>
-          </div>
+    <footer class="footer-section">
+      <div class="footer-section footer-section_container">
+        <div class="footer__logo">
+          <img class="logo" src="./assets/images/logo.png" alt="Logo" />
         </div>
-      </footer>
-    </div>
+        <div class="footer__heading">
+          <h3>"Kdo maže, ten jede"</h3>
+        </div>
+        <div class="footer__copyright">
+          <p>© Oficiální stránky společnosti dmpagency</p>
+        </div>
+      </div>
+    </footer>
   </body>
+  <script src="js/script.js"></script>
 </html>
