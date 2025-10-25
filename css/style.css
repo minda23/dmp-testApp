@@ -141,6 +141,8 @@ img:not(.logo) {
   align-items: center;
   align-content: center;
   justify-content: space-around;
+  margin-top: var(--space-2xs);
+  margin-bottom: var(--space-2xs);
 }
 
 .nav__toggle {
@@ -168,10 +170,10 @@ img:not(.logo) {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  gap: var(--space-sm);
   padding-left: 0;
   column-gap: var(--space-sm-plus);
   list-style-type: none;
+  gap: var(--space-md);
 }
 
 .nav__item {
@@ -592,11 +594,19 @@ img:not(.logo) {
 }
 
 @media screen and (min-width: 768px) {
+
+  .nav__list--secondary {
+    gap: var(--space-xl2);
+  }
+
   .gallery {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-xs);
   }
 
+  .main {
+    margin-top: 0;
+  }
 
   .burger-icon {
     display: none;
