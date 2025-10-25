@@ -250,7 +250,8 @@ img:not(.logo) {
 
 .gallery {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: stretch;
   margin-left: var(--font-size-body);
   margin-right: var(--font-size-body);
 }
@@ -539,6 +540,7 @@ img:not(.logo) {
   width: var(--container-section);
   margin: 0 auto;
   background-color: var(--color-footer);
+  padding: var(--space-sm-plus) 0;
 }
 
 .footer__heading {
