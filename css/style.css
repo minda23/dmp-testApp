@@ -141,8 +141,8 @@ img:not(.logo) {
   align-items: center;
   align-content: center;
   justify-content: space-around;
-  margin-top: var(--space-2xs);
-  margin-bottom: var(--space-2xs);
+  margin: var(--space-2xs) 0;
+  c
 }
 
 .nav__toggle {
