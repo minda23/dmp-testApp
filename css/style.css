@@ -142,7 +142,7 @@ img:not(.logo) {
   align-content: center;
   justify-content: space-around;
   margin: var(--space-2xs) 0;
-  c
+
 }
 
 .nav__toggle {
