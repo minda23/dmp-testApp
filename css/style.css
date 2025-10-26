@@ -267,6 +267,7 @@ img:not(.logo) {
   flex-direction: column;
   justify-content: center;
   min-height: 20rem;
+
 }
 
 .gallery__item--text {
@@ -619,7 +620,6 @@ img:not(.logo) {
     flex-direction: column;
     justify-content: center;
     min-height: 0;
-    padding-top: 1rem;
   }
 
   .gallery__item--text {
@@ -712,7 +712,6 @@ img:not(.logo) {
 }
 
 @media (min-width: 1200px) {
-
   .gallery {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
