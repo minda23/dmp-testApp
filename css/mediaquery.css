@@ -1,0 +1,216 @@
+/* media queries*/
+@media screen and (min-width: 420px) {
+    .nav__item--button {
+        padding: var(--space-2xs);
+    }
+
+    .contact-info__card {
+        max-width: 90vw;
+        width: var(--space-xl7);
+    }
+
+    .main__title {
+        font-size: var(--space-md);
+    }
+
+    .contact__title {
+        font-size: var(--main-title);
+    }
+
+    .contact__address-content {
+        flex-direction: row;
+        margin-left: 0;
+    }
+
+    .contact__address-content a {
+        font-size: var(--font-size-footer-favicon);
+    }
+
+    .adress__info {
+        text-align: left;
+        font-size: var(--font-size-footer-md);
+    }
+
+    .dm_heading h3 {
+        font-size: var(--font-size-h3);
+    }
+
+    .dm_heading span {
+        font-size: var(--font-size-footer-md);
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .nav__list--secondary {
+        gap: var(--space-xl2);
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main__title {
+        font-size: var(--space-sm);
+    }
+
+    .gallery__item {
+        break-inside: avoid;
+        margin-bottom: var(--space-2xs);
+        text-align: center;
+        border-radius: var(--radius-xs);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 0;
+    }
+
+    .gallery__item--text {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        padding: var(--space-sm-plus) 0rem;
+        line-height: var(--line-height-gallery-text);
+    }
+
+    .gallery__text {
+        font-size: var(--space-2xs);
+
+    }
+
+    .gallery__title {
+        font-size: var(--space-xs);
+    }
+
+    .main {
+        margin-top: 0;
+    }
+
+    .burger-icon {
+        display: none;
+    }
+
+    .nav__right {
+        flex-direction: row;
+        transform: none;
+        position: static;
+        gap: var(--space-xl);
+
+    }
+
+    .nav__right {
+        flex-direction: row;
+    }
+
+    .contact__title {
+        font-size: var(--space-sm-plus1);
+    }
+
+    .contact__subtitle {
+        font-size: var(--space-2xs);
+        color: var(--color-text-light);
+    }
+
+    .contact__address-content a {
+        text-decoration: none;
+        color: var(--color-text-heading);
+        font-size: var(--space-1xs);
+    }
+
+    .contact-info__title {
+        font-size: var(--font-size-p);
+    }
+
+    .contact-info__list li a {
+        color: var(--color-text-light);
+        text-decoration: none;
+        font-size: var(--space-1xs);
+    }
+
+    .logo {
+        width: var(--logo-width);
+        height: var(--logo-height);
+    }
+
+    .nav {
+        flex-direction: row;
+    }
+
+    .nav__list--secondary {
+        flex-direction: row;
+    }
+
+    .footer__heading {
+        font-size: var(--space-xs);
+    }
+
+    .footer__copyright {
+        font-size: var(--space-1xs);
+    }
+}
+
+@media (min-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        max-height: var(--gallery-height);
+        padding-left: var(--space-2xs);
+        padding-right: var(--space-2xs);
+        grid-column-gap: var(--space-2xs);
+    }
+
+    .gallery__item--1 {
+        grid-row: span 7;
+    }
+
+    .gallery__item--2 {
+        grid-row: span 4;
+    }
+
+    .gallery__item--3 {
+        grid-row: span 5;
+    }
+
+    .gallery__item--4 {
+        grid-row: span 4;
+    }
+
+    .gallery__item--5 {
+        grid-row: span 6;
+    }
+
+    .gallery__item--6 {
+        grid-row: span 4;
+    }
+
+    .gallery__item--7 {
+        grid-row: span 4;
+    }
+
+    .gallery__item--8 {
+        grid-row: span 5;
+    }
+
+    .gallery__item--9 {
+        grid-row: span 4;
+    }
+
+    .gallery__item--10 {
+        grid-row: span 7;
+    }
+
+    .gallery__item--11 {
+        grid-row: span 4;
+    }
+
+    .gallery__item--12 {
+        grid-row: span 6;
+    }
+
+}

@@ -1,0 +1,99 @@
+:root {
+
+    /* colors */
+    --color-primary: #ff682e;
+    --color-white: #ffffff;
+    --color-text-heading: #000000;
+    --color-text-light: #818181;
+    --color-contact-section: #F6F6F6;
+    --color-footer: #E9E9E9;
+    /* font-family */
+    --font-family-default: "Poppins", sans-serif;
+    --font-family-body-text: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    --font-family-footer: Arial, Helvetica, sans-serif;
+
+    /* font-size navbar */
+    --font-size-heading: 1.25rem;
+    /* font-size main */
+    --font-size-icon: 1.25rem;
+    --font-size-h1: 2.125rem;
+    --font-size-h2: 1.75rem;
+    --font-size-body: 1rem;
+    /* font-size footer */
+    --font-size-footer-2xs: 0.579rem;
+    --font-size-footer-xs: 0.961rem;
+    --font-size-footer-sm: 1.125rem;
+    --font-size-p: 1.348rem;
+    --font-size-h3: 1.498rem;
+    --font-size-icon: 4.194rem;
+    --font-size-h2-plus: 2.097rem;
+    --font-size-footer-md: 1.198rem;
+    --font-size-footer-lg: 1.35rem;
+    --font-size-footer-favicon: 1.498rem;
+    --font-size-footer-xl: 1.5rem;
+    --font-size-footer-xl2: 1.798rem;
+    /* font style */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    /* spacing  */
+    --space-5xs: 0.438rem;
+    --space-4xs: 0.536rem;
+    --space-3xs: 0.625rem;
+    --space-2xs: 0.938rem;
+    --space-1xs: 1.25rem;
+    --space-xs: 1.563rem;
+    --space-sm: 1.875rem;
+    --space-sm-plus: 2.188rem;
+    --space-sm-plus1: 2.097rem;
+    --space-md: 2.246rem;
+    --space-md-plus: 2.375;
+    --space-lg: 2.5rem;
+    --space-lg-extra: 2.839rem;
+    --space-lg-plus: 3.125rem;
+    --space-xl: 3.943rem;
+    --space-xl1: 4.75rem;
+    --space-xl2: 5rem;
+    --space-xl3: 5.286rem;
+    --space-xl4: 6.365rem;
+    --space-xl5: 9.375rem;
+    --space-xl5-plus: 12.983rem;
+    --space-xl6: 12.656rem;
+    --space-xl7: 40.812rem;
+    --space-xl8: 120rem;
+    /* spacing for images  */
+    --space-xs-gl: 18rem;
+    --space-md-gl: 22.25rem;
+    --space-lg-gl: 22.875rem;
+    --space-lg-gl-plus: 23.75rem;
+    --space-xl-gl: 27.469rem;
+    --space-xl2-gl: 31.188rem;
+    --space-xl3-gl: 32.688rem;
+
+    /* radius */
+    --radius-xs: 0.5rem;
+    --radius-sm: 0.938rem;
+    --radius-md: 2.375rem;
+    --radius-lg: 3.25rem;
+
+    /* line height */
+    --line-height-gallery-text: 140%;
+    --line-height-gallery-title: 120%;
+    --line-height-heading-footer: 168%;
+
+    /*extra spaces */
+    --logo-max-width: 15rem;
+    --logo-width: 16rem;
+    --logo-height: 4rem;
+    --column-max-width: 15rem;
+    --logo-width: 12rem;
+    --logo-height: 3rem;
+    --nav-width: 70rem;
+    --logo-position-top: 0.641rem;
+    --logo-position-left: 0.45rem;
+    --main-title: 1.4rem;
+    --footer-padding: 0.8rem;
+    --container-section: 90rem;
+    --gallery-height: 50rem;
+}
