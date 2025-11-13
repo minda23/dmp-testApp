@@ -21,6 +21,21 @@ img:not(.logo) {
     margin-top: var(--space-4xs);
 }
 
+p:nth-child(odd) {
+    border: 1px solid black;
+}
+
+
+p:nth-child(even) {
+    border: 1px solid green;
+}
+
+div:has(h1) {
+    color: aqua
+}
+
+
+
 .nav__right {
     max-width: 100%;
     width: var(--nav-width);
@@ -35,6 +50,10 @@ img:not(.logo) {
     z-index: 1000;
 }
 
+.main__title {
+    position: relative;
+}
+
 .nav {
     background-color: var(--color-white);
     display: flex;
@@ -45,6 +64,8 @@ img:not(.logo) {
     justify-content: space-around;
     margin: var(--space-2xs) 0;
 }
+
+
 
 .nav__toggle {
     position: fixed;

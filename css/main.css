@@ -9,12 +9,20 @@
 
 .main__title {
     text-align: center;
-    font-size: var(--space-md);
+    font-size: clamp(var(--space-4xs), 4vw, var(--space-md));
+}
+
+p::first-line {
+    color: red;
+}
+
+
+:is(div.contact__block, h2, p) {
+    background-color: blueviolet;
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr;
     align-items: stretch;
     margin-bottom: var(--space-sm-plus);
     column-gap: var(--space-2xs);
@@ -27,17 +35,76 @@
     margin-bottom: var(--space-2xs);
     text-align: center;
     border-radius: var(--radius-xs);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     min-height: 20rem;
+    position: relative;
+    overflow: hidden;
 
+}
+
+.gallery__item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* Skratka pre top:0; right:0; bottom:0; left:0; */
+    background: rgba(0, 0, 0, 0.4);
+    /* Polopriehľadný tmavý overlay */
+    opacity: 1;
+    /* Skryté na začiatku */
+    transition: opacity 0.4s ease;
+    /* Plynulý prechod */
+    z-index: 1;
+    /* Nad obrázkom, ale pod textom */
+}
+
+.gallery__item:hover::before {
+    opacity: 1;
+}
+
+/* ak máš text, treba ho dostať nad overlay */
+.gallery__text,
+.gallery__title {
+    position: relative;
+    z-index: 2;
+    /* Nad overlayom */
+}
+
+.gallery__item::after {
+    content: "View more";
+    /* môžeš zmeniť na 🔍 alebo čokoľvek */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    /* neblokuje kliknutie na obrázok */
+}
+
+/* 🪄 Efekt pri hover */
+.gallery__item:hover::before,
+.gallery__item:hover::after {
+    opacity: 1;
+}
+
+/* zabezpečí, že text nad overlayom zostane čitateľný */
+.gallery__text,
+.gallery__title {
+    position: relative;
+    z-index: 3;
 }
 
 .gallery__item--text {
     background-color: var(--color-primary);
     color: var(--color-white);
     line-height: var(--line-height-gallery-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .gallery__text {
@@ -53,6 +120,8 @@
     line-height: var(--line-height-gallery-title);
 }
 
+
+
 .gallery__item img {
     border-radius: var(--radius-xs);
     object-fit: cover;
@@ -61,6 +130,7 @@
     min-width: 100%;
     min-height: 100%;
 }
+
 
 .main__button-wrapper {
     text-align: center;
@@ -73,6 +143,16 @@
     color: var(--color-white);
     font-size: var(--space-1xs);
     border: none;
+}
+
+.main__button::before {
+    content: "👉 ";
+    /* obsah, který se vloží před text */
+}
+
+/* Pseudo-element po tlačítku */
+.main__button::after {
+    content: " 🚀";
 }
 
 .main__button img {
