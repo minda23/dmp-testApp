@@ -208,7 +208,7 @@
 
 .contact-info__list li a {
     color: var(--color-text-light);
-    text-decoration: none;
+    text-decoration: dashed;
     font-size: var(--space-2xs);
 }
 
