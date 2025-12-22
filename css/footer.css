@@ -52,7 +52,7 @@
 }
 
 .contact__address-content img {
-    width: var(--font-size-footer-xs);
+    width: var(--font-size-footer-xl);
     height: var(--font-size-footer-xs);
     display: flex;
     justify-content: center;
