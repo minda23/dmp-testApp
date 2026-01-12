@@ -140,7 +140,8 @@
     }
 
     .p {
-        color: black;
+        color: orange;
+        text-align: center;
     }
 
     .footer__heading {
