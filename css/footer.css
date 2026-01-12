@@ -195,11 +195,11 @@
 .contact-info__list {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 1rem;
 }
 
 .contact__info--text {
-    justify-content: left;
+    justify-content: right;
 }
 
 .contact-info__list li {
